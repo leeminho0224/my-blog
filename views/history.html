@@ -1,0 +1,372 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0e0e13;
+        }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel {
+            background: rgba(37, 37, 45, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .glitch-border {
+            position: relative;
+        }
+        .glitch-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #a1faff, transparent);
+            opacity: 0.3;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#920091",
+                      "on-surface": "#f9f5fd",
+                      "tertiary": "#f3ffca",
+                      "on-primary": "#006165",
+                      "surface-container-high": "#1f1f26",
+                      "tertiary-dim": "#beee00",
+                      "on-primary-fixed": "#004346",
+                      "outline": "#76747b",
+                      "on-tertiary-container": "#4a5e00",
+                      "on-error-container": "#ffa8a3",
+                      "surface-variant": "#25252d",
+                      "on-secondary": "#400040",
+                      "secondary-dim": "#ff51fa",
+                      "on-tertiary-fixed": "#3a4a00",
+                      "outline-variant": "#48474d",
+                      "on-secondary-fixed": "#620061",
+                      "primary-dim": "#00e5ee",
+                      "on-tertiary-fixed-variant": "#526900",
+                      "surface-container-highest": "#25252d",
+                      "primary-fixed": "#00f4fe",
+                      "on-surface-variant": "#acaab1",
+                      "primary-container": "#00f4fe",
+                      "secondary-container": "#a900a9",
+                      "on-tertiary": "#516700",
+                      "surface-tint": "#a1faff",
+                      "inverse-on-surface": "#55545b",
+                      "surface-container-lowest": "#000000",
+                      "surface-dim": "#0e0e13",
+                      "secondary": "#ff51fa",
+                      "on-primary-container": "#00575b",
+                      "on-background": "#f9f5fd",
+                      "surface": "#0e0e13",
+                      "tertiary-container": "#cafd00",
+                      "on-secondary-container": "#fff5f9",
+                      "secondary-fixed-dim": "#ffa6f3",
+                      "surface-container": "#19191f",
+                      "inverse-primary": "#006a6e",
+                      "background": "#0e0e13",
+                      "error-container": "#9f0519",
+                      "surface-bright": "#2c2b33",
+                      "secondary-fixed": "#ffbdf3",
+                      "primary-fixed-dim": "#00e5ee",
+                      "on-error": "#490006",
+                      "tertiary-fixed": "#cafd00",
+                      "surface-container-low": "#131319",
+                      "on-primary-fixed-variant": "#006266",
+                      "tertiary-fixed-dim": "#beee00",
+                      "inverse-surface": "#fcf8ff",
+                      "error-dim": "#d7383b",
+                      "primary": "#a1faff",
+                      "error": "#ff716c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#0e0e13]/40 backdrop-blur-xl fixed top-0 z-50 w-full flex justify-between items-center px-6 py-4">
+<a class="text-xl font-black text-[#00F5FF] drop-shadow-[0_0_8px_rgba(0,245,255,0.4)] font-headline tracking-tighter uppercase" href="/">QUANTUM_DEV_LOG</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#76747b] font-headline tracking-tighter uppercase hover:text-[#00F5FF] transition-all duration-300" href="/">홈</a>
+<a class="text-[#76747b] font-headline tracking-tighter uppercase hover:text-[#00F5FF] transition-all duration-300" href="/practice">코딩 연습</a>
+<<<<<<< HEAD
+=======
+<a class="text-[#76747b] font-headline tracking-tighter uppercase hover:text-[#00F5FF] transition-all duration-300" href="/glossary">코딩용어 모음집</a>
+>>>>>>> 604c53a (update glossary)
+<a class="text-[#76747b] font-headline tracking-tighter uppercase hover:text-[#00F5FF] transition-all duration-300" href="/lecture">코딩 강의</a>
+<a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1 font-headline tracking-tighter uppercase" href="/history">코딩 역사</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#00F5FF]">terminal</span>
+</div>
+<<<<<<< HEAD
+=======
+<a href="/glossary" class="fixed right-6 bottom-24 md:bottom-8 z-40 bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-4 py-3 font-headline text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(0,245,255,0.2)]">용어집</a>
+>>>>>>> 604c53a (update glossary)
+</nav>
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col h-full py-8 px-4 bg-[#131319] fixed left-0 top-0 w-64 border-r border-[#48474d]/15 shadow-[10px_0px_30px_-15px_rgba(0,245,255,0.08)] z-40">
+<div class="mt-16 mb-12">
+<div class="text-lg font-bold text-[#a1faff] font-mono">ROOT@QUANTUM</div>
+<div class="text-[10px] text-tertiary-dim font-mono tracking-widest mt-1 opacity-70">STATUS: STABLE</div>
+</div>
+<div class="space-y-2 flex-grow">
+<div class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:text-[#a1faff] hover:bg-[#25252d] transition-colors cursor-pointer font-mono text-xs uppercase">
+<span class="material-symbols-outlined text-lg">folder</span>
+                REPOSITORY
+            </div>
+<div class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:text-[#a1faff] hover:bg-[#25252d] transition-colors cursor-pointer font-mono text-xs uppercase">
+<span class="material-symbols-outlined text-lg">bug_report</span>
+                DEBUGGER
+            </div>
+<div class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:text-[#a1faff] hover:bg-[#25252d] transition-colors cursor-pointer font-mono text-xs uppercase">
+<span class="material-symbols-outlined text-lg">terminal</span>
+                TERMINAL
+            </div>
+<div class="flex items-center gap-3 py-3 px-4 bg-[#25252d] text-[#00F5FF] border-l-2 border-[#ff51fa] font-mono text-xs uppercase cursor-pointer">
+<span class="material-symbols-outlined text-lg">history</span>
+                HISTORY
+            </div>
+</div>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:text-[#a1faff] hover:bg-[#25252d] transition-colors cursor-pointer font-mono text-xs uppercase">
+<span class="material-symbols-outlined text-lg">settings</span>
+                SETTINGS
+            </div>
+<button class="w-full mt-4 bg-primary text-on-primary py-3 px-4 font-mono font-bold text-xs uppercase tracking-tighter active:scale-95 transition-transform">
+                EXECUTE_LOG
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-64 pt-24 pb-20 px-6 md:px-12 relative min-h-screen overflow-hidden">
+<!-- Grid Background Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03]" style="background-image: linear-gradient(#48474d 1px, transparent 1px), linear-gradient(90deg, #48474d 1px, transparent 1px); background-size: 40px 40px;"></div>
+<!-- Header Section -->
+<header class="max-w-5xl mx-auto mb-20 relative">
+<div class="absolute -top-10 -left-10 text-[120px] font-black text-outline/5 select-none pointer-events-none font-headline uppercase leading-none">
+                CHRONO
+            </div>
+<div class="flex flex-col md:flex-row items-end justify-between gap-6 border-b border-outline-variant/20 pb-8">
+<div class="space-y-2">
+<div class="flex items-center gap-2 text-secondary font-mono text-xs">
+<span class="w-2 h-2 bg-secondary animate-pulse"></span>
+                        SYSTEM_ARCHIVE: PROTOCOL_HISTORY
+                    </div>
+<h1 class="text-5xl md:text-7xl font-black font-headline tracking-tighter uppercase leading-tight">
+                        코딩의 역사
+                    </h1>
+<p class="text-on-surface-variant max-w-xl font-body text-lg font-light">
+                        에이다 러브레이스의 초기 해석기관 알고리즘부터 현대의 분산형 프로그래밍까지, 코드가 세상을 정의하는 방식을 탐구합니다.
+                    </p>
+</div>
+<div class="text-right hidden md:block">
+<div class="text-tertiary-dim font-mono text-[10px] tracking-widest uppercase mb-1">// TIME_COMPLEXITY</div>
+<div class="text-3xl font-headline font-light italic">O(∞)</div>
+</div>
+</div>
+</header>
+<!-- Timeline / Log Section -->
+<section class="max-w-5xl mx-auto space-y-32 relative">
+<!-- Era 01: Ada Lovelace -->
+<div class="relative group">
+<div class="absolute -left-4 top-0 bottom-0 w-[1px] bg-gradient-to-b from-primary to-transparent opacity-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4 space-y-4">
+<div class="font-mono text-secondary text-sm tracking-[0.2em] uppercase">Era 0x01 // 19th Century</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface">The Prophet of Logic</h2>
+<div class="h-1 w-12 bg-primary"></div>
+<div class="p-4 bg-surface-container-high border-l-2 border-primary text-on-surface-variant font-mono text-xs leading-relaxed italic">
+                            "해석기관은 직물을 짜듯이 대수학적 패턴을 짜낸다."<br/>
+                            - 에이다 러브레이스
+                        </div>
+</div>
+<div class="md:col-span-8">
+<div class="glass-panel p-1 relative group-hover:transform group-hover:rotate-y-1 transition-transform duration-500">
+<img class="w-full aspect-[21/9] object-cover filter grayscale contrast-125 opacity-70 group-hover:opacity-100 transition-opacity" data-alt="Vintage black and white schematic of early mechanical computing machine with intricate brass gears and Victorian aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzgDUTq2ZLjnaZ52G4gIMqfSIRr_8wYuD-aGeDtNVlN7LwgWY9NzlqV_JVWuIAt8seSV85e-YOpX-h_NBev7QjwNuCufgN70lLTk7fkzbZnThK9WcoSqc0ng8bxBohxY3EADbu8D9YtRR61_Rx559tXsPPpCxtNDpmOv2-mO8oLlXBqUOk3g2iEmsQMJgdCDtpQTpMj34eFeO4QZUWeBoj8pkAUFOZS59WgsNscYycw8qPWMLXOh6Vn62cYFJFdi2-qMR8nXRnIl8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h3 class="text-2xl font-headline font-bold mb-2 uppercase tracking-tight">최초의 프로그래머, 에이다 러브레이스</h3>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-2xl">
+                                    찰스 배비지의 해석기관을 위해 작성된 베르누이 수 계산 알고리즘은 인류 역사상 최초의 '컴퓨터 프로그램'으로 기록됩니다. 그녀는 기계가 단순한 계산을 넘어 예술과 음악까지 창조할 수 있다는 선견지명을 가졌습니다.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Era 02: Mainframes & Early Langs -->
+<div class="relative group">
+<div class="absolute -left-4 top-0 bottom-0 w-[1px] bg-gradient-to-b from-primary to-transparent opacity-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-8 order-2 md:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-highest p-6 space-y-4 hover:bg-surface-bright transition-colors">
+<div class="text-tertiary font-mono text-[10px] uppercase">Protocol // FORTRAN</div>
+<h4 class="text-xl font-headline font-bold uppercase">과학 계산의 탄생</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                    1957년, 고수준 언어의 효시인 FORTRAN이 등장하며 복잡한 기계어 대신 인간이 이해할 수 있는 수학적 표현으로 코딩이 가능해졌습니다.
+                                </p>
+</div>
+<div class="bg-surface-container-highest p-6 space-y-4 hover:bg-surface-bright transition-colors mt-8">
+<div class="text-tertiary font-mono text-[10px] uppercase">Protocol // COBOL</div>
+<h4 class="text-xl font-headline font-bold uppercase">비즈니스 로직의 표준</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                    그레이스 호퍼 박사가 주도한 COBOL은 비즈니스 데이터 처리를 위한 표준을 정립했으며, 현재까지도 전 세계 금융 인프라를 지탱하고 있습니다.
+                                </p>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 order-1 md:order-2 space-y-4">
+<div class="font-mono text-secondary text-sm tracking-[0.2em] uppercase">Era 0x02 // 1950s - 1960s</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface">The Birth of Syntax</h2>
+<div class="h-1 w-12 bg-primary"></div>
+<p class="text-on-surface-variant font-body">
+                            천공 카드를 넘어서 정형화된 프로그래밍 문법이 탄생한 시기입니다. 폰 노이만 구조 위에서 추상화된 논리가 비로소 언어의 형태를 갖추기 시작했습니다.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Era 03: The C Revolution -->
+<div class="relative group">
+<div class="absolute -left-4 top-0 bottom-0 w-[1px] bg-gradient-to-b from-primary to-transparent opacity-20"></div>
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+<div class="font-mono text-secondary text-sm tracking-[0.2em] uppercase mb-4">Era 0x03 // 1970s - 1980s</div>
+<h2 class="text-5xl font-headline font-bold text-on-surface uppercase mb-6">The C Revolution</h2>
+<p class="text-on-surface-variant font-body text-lg">
+                        데니스 리치와 켄 톰슨에 의해 탄생한 C 언어와 UNIX 시스템은 현대 운영체제와 프로그래밍 패러다임의 기초가 되었습니다.
+                    </p>
+</div>
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[100px]" style="font-variation-settings: 'FILL' 1;">terminal</span>
+</div>
+<div class="font-mono text-xs space-y-2 text-[#32CD32] mb-8">
+<div>$ cat core_logic.c</div>
+<div>#include &lt;stdio.h&gt;</div>
+<div>int main() {</div>
+<div class="pl-4">printf("Hello, Digital World!\n");</div>
+<div class="pl-4">return 0;</div>
+<div>}</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="space-y-2">
+<span class="text-primary font-headline font-bold">STRUCTURE</span>
+<p class="text-xs text-on-surface-variant">포인터와 직접 메모리 관리를 통해 하드웨어의 통제권을 프로그래머에게 부여했습니다.</p>
+</div>
+<div class="space-y-2">
+<span class="text-primary font-headline font-bold">PORTABILITY</span>
+<p class="text-xs text-on-surface-variant">서로 다른 아키텍처 사이에서 코드를 재사용할 수 있는 이식성의 시대를 열었습니다.</p>
+</div>
+<div class="space-y-2">
+<span class="text-primary font-headline font-bold">LEGACY</span>
+<p class="text-xs text-on-surface-variant">오늘날의 C++, Java, JavaScript까지 이어지는 중괄호({}) 문법의 시조입니다.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Era 04: Modern Web & Python -->
+<div class="relative group">
+<div class="absolute -left-4 top-0 bottom-0 w-[1px] bg-gradient-to-b from-primary to-transparent opacity-20"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5 space-y-6">
+<div class="font-mono text-secondary text-sm tracking-[0.2em] uppercase">Era 0x04 // 1990s - Present</div>
+<h2 class="text-4xl font-headline font-bold text-on-surface">The Democratization of Code</h2>
+<div class="h-1 w-12 bg-primary"></div>
+<p class="text-on-surface-variant font-body">
+                            인터넷의 보급과 함께 Python, JavaScript, Ruby 같은 고수준 스크립트 언어들이 폭발적으로 성장했습니다. 이제 코딩은 전문가의 영역을 넘어 창의적인 표현의 수단이 되었습니다.
+                        </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-3 py-1 bg-surface-container-highest text-primary font-mono text-[10px] border border-primary/20 uppercase tracking-tighter transition-all hover:bg-primary hover:text-on-primary">Python.ai</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary font-mono text-[10px] border border-secondary/20 uppercase tracking-tighter transition-all hover:bg-secondary hover:text-on-secondary">JavaScript.web</span>
+<span class="px-3 py-1 bg-surface-container-highest text-tertiary-dim font-mono text-[10px] border border-tertiary-dim/20 uppercase tracking-tighter transition-all hover:bg-tertiary-dim hover:text-on-tertiary">Rust.system</span>
+</div>
+</div>
+<div class="md:col-span-7">
+<div class="relative aspect-video overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="Cyberpunk workspace with multiple high-resolution monitors displaying complex glowing code arrays in a dark tech-focused environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYMQg-CaNjMOtA9FXNjTsHetyJTfY4p7gsth_UIBlkF1guzLDdXffqURlKFhXWSFchWuuuGnWzi6YUeOZ2Bj0SOGPsk-xQbjWNCLUFFUuNBDuWbD4ktuVwLleHiQivu66JVBrNaoxVN7LdzcYNHf9WG7gjSbrhAVxl0Y-G5gJ4Pv-iELiDNbWfPMUCnzXTXwJnA_61kc45aU1OcQ02emm9Y0kl3J4rJTkKMbuH56ziHiyxB6sb8ODkIzE0FyCtyh8NPk13P7C6O0Q"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="p-8 border border-primary/30 glass-panel max-w-sm transform -rotate-3">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary"></div>
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+</div>
+<div class="font-mono text-xs text-primary-dim leading-relaxed">
+<span class="text-secondary">import</span> future<br/><br/>
+<span class="text-on-surface">def</span> <span class="text-tertiary">evolve_world</span>():<br/>
+                                            code = <span class="text-secondary-dim">"limitless"</span><br/>
+                                            <span class="text-on-surface-variant">// AI와 데이터의 시대</span><br/>
+                                            <span class="text-secondary">return</span> build_next_gen(code)
+                                    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="max-w-5xl mx-auto mt-40 mb-20 text-center">
+<div class="p-12 border-2 border-dashed border-outline-variant/30 relative">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 bg-surface text-tertiary font-mono text-[10px] tracking-widest uppercase">
+                    INPUT_REQUIRED
+                </div>
+<h2 class="text-3xl font-headline font-bold uppercase mb-4">역사의 다음 장을 써내려갈 준비가 되셨나요?</h2>
+<p class="text-on-surface-variant font-body mb-8 max-w-xl mx-auto">
+                    우리가 작성하는 한 줄의 코드는 100년 전의 상상이 현실이 된 결과이며, 100년 후의 미래를 설계하는 기초가 됩니다.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold uppercase tracking-tight flex items-center justify-center gap-2 hover:skew-x-[-10deg] transition-transform">
+                        지금 코드 시작하기
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-outline-variant text-on-surface px-8 py-4 font-headline font-bold uppercase tracking-tight hover:bg-surface-variant transition-colors">
+                        더 많은 기록 보기
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] py-2 px-6 fixed bottom-0 w-full border-t border-[#48474d]/10 flex justify-between items-center z-50">
+<div class="flex gap-4">
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity font-mono text-[10px] tracking-widest uppercase" href="#">uptime_report</a>
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity font-mono text-[10px] tracking-widest uppercase" href="#">git_hub</a>
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity font-mono text-[10px] tracking-widest uppercase" href="#">changelog</a>
+</div>
+<div class="text-[#32CD32] font-mono text-[10px] tracking-widest uppercase">
+            © 2024 QUANTUM_DEV_PROTOCOL | SYSTEM_STATUS: ONLINE
+        </div>
+</footer>
+<<<<<<< HEAD
+</body></html>
+=======
+</body></html>
+>>>>>>> 604c53a (update glossary)

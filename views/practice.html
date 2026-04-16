@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#920091",
+                        "on-surface": "#f9f5fd",
+                        "tertiary": "#f3ffca",
+                        "on-primary": "#006165",
+                        "surface-container-high": "#1f1f26",
+                        "tertiary-dim": "#beee00",
+                        "on-primary-fixed": "#004346",
+                        "outline": "#76747b",
+                        "on-tertiary-container": "#4a5e00",
+                        "on-error-container": "#ffa8a3",
+                        "surface-variant": "#25252d",
+                        "on-secondary": "#400040",
+                        "secondary-dim": "#ff51fa",
+                        "on-tertiary-fixed": "#3a4a00",
+                        "outline-variant": "#48474d",
+                        "on-secondary-fixed": "#620061",
+                        "primary-dim": "#00e5ee",
+                        "on-tertiary-fixed-variant": "#526900",
+                        "surface-container-highest": "#25252d",
+                        "primary-fixed": "#00f4fe",
+                        "on-surface-variant": "#acaab1",
+                        "primary-container": "#00f4fe",
+                        "secondary-container": "#a900a9",
+                        "on-tertiary": "#516700",
+                        "surface-tint": "#a1faff",
+                        "inverse-on-surface": "#55545b",
+                        "surface-container-lowest": "#000000",
+                        "surface-dim": "#0e0e13",
+                        "secondary": "#ff51fa",
+                        "on-primary-container": "#00575b",
+                        "on-background": "#f9f5fd",
+                        "surface": "#0e0e13",
+                        "tertiary-container": "#cafd00",
+                        "on-secondary-container": "#fff5f9",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "surface-container": "#19191f",
+                        "inverse-primary": "#006a6e",
+                        "background": "#0e0e13",
+                        "error-container": "#9f0519",
+                        "surface-bright": "#2c2b33",
+                        "secondary-fixed": "#ffbdf3",
+                        "primary-fixed-dim": "#00e5ee",
+                        "on-error": "#490006",
+                        "tertiary-fixed": "#cafd00",
+                        "surface-container-low": "#131319",
+                        "on-primary-fixed-variant": "#006266",
+                        "tertiary-fixed-dim": "#beee00",
+                        "inverse-surface": "#fcf8ff",
+                        "error-dim": "#d7383b",
+                        "primary": "#a1faff",
+                        "error": "#ff716c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(37, 37, 45, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .grid-bg {
+            background-image: linear-gradient(rgba(72, 71, 77, 0.1) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(72, 71, 77, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-[#0e0e13]/40 backdrop-blur-xl flex justify-between items-center px-6 py-4">
+<a class="text-xl font-black text-[#00F5FF] drop-shadow-[0_0_8px_rgba(0,245,255,0.4)] font-['Space_Grotesk'] tracking-tighter uppercase" href="/">QUANTUM_DEV_LOG</a>
+<div class="hidden md:flex gap-8 items-center font-['Space_Grotesk'] tracking-tighter uppercase text-xs">
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/">홈</a>
+<a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1" href="/practice">코딩 연습</a>
+<<<<<<< HEAD
+=======
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/glossary">코딩용어 모음집</a>
+>>>>>>> 604c53a (update glossary)
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/lecture">코딩 강의</a>
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/history">코딩 역사</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#00F5FF]">terminal</span>
+</div>
+<<<<<<< HEAD
+=======
+<a href="/glossary" class="fixed right-6 bottom-24 md:bottom-8 z-40 bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-4 py-3 font-headline text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(0,245,255,0.2)]">용어집</a>
+>>>>>>> 604c53a (update glossary)
+</nav>
+<!-- Sidebar (Web Only) -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-[#131319] border-r border-[#48474d]/15 shadow-[10px_0px_30px_-15px_rgba(0,245,255,0.08)] hidden md:flex flex-col py-8 px-4 z-40 pt-24">
+<div class="mb-8">
+<div class="text-lg font-bold text-[#a1faff] font-mono">ROOT@QUANTUM</div>
+<div class="text-[10px] text-tertiary-dim font-mono tracking-widest opacity-70">STATUS: STABLE</div>
+</div>
+<div class="space-y-2 flex-grow">
+<div class="flex items-center gap-3 p-3 text-[#76747b] hover:bg-[#25252d] transition-colors font-mono text-xs cursor-pointer group">
+<span class="material-symbols-outlined text-sm">folder</span>
+                REPOSITORY
+            </div>
+<div class="flex items-center gap-3 p-3 bg-[#25252d] text-[#00F5FF] border-l-2 border-[#ff51fa] font-mono text-xs cursor-pointer">
+<span class="material-symbols-outlined text-sm">bug_report</span>
+                DEBUGGER
+            </div>
+<div class="flex items-center gap-3 p-3 text-[#76747b] hover:bg-[#25252d] transition-colors font-mono text-xs cursor-pointer">
+<span class="material-symbols-outlined text-sm">terminal</span>
+                TERMINAL
+            </div>
+<div class="flex items-center gap-3 p-3 text-[#76747b] hover:bg-[#25252d] transition-colors font-mono text-xs cursor-pointer">
+<span class="material-symbols-outlined text-sm">history</span>
+                HISTORY
+            </div>
+</div>
+<button class="w-full py-4 mb-4 bg-primary text-on-primary font-mono text-xs font-bold hover:skew-x-[-10deg] transition-transform">
+            EXECUTE_LOG
+        </button>
+<div class="border-t border-outline-variant/10 pt-4">
+<div class="flex items-center gap-3 p-3 text-[#76747b] hover:bg-[#25252d] transition-colors font-mono text-xs cursor-pointer">
+<span class="material-symbols-outlined text-sm">settings</span>
+                SETTINGS
+            </div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-16 min-h-screen grid-bg relative overflow-hidden">
+<!-- Decorative Ambient Glow -->
+<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
+<div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-secondary/5 blur-[100px] rounded-full -z-10"></div>
+<div class="max-w-6xl mx-auto px-6">
+<!-- Hero Section / Header -->
+<div class="mb-12 relative">
+<div class="inline-block px-3 py-1 bg-surface-container-highest text-secondary-dim font-mono text-[10px] tracking-widest mb-4">
+                    SYSTEM_PROTOCOL: PRACTICE_MODE
+                </div>
+<h1 class="text-6xl md:text-8xl font-headline font-black tracking-tighter leading-none text-white mb-6">
+                    코딩 <span class="text-primary">연습</span><span class="text-secondary">_</span>
+</h1>
+<p class="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
+                    퀀텀 개발 프로토콜에 오신 것을 환영합니다. 여기서는 단순한 이론을 넘어 <span class="text-primary-fixed">실제 세상의 문제</span>를 해결하며 당신의 논리 구조를 재설계합니다. 매일 업데이트되는 과제를 통해 한계를 돌파하세요.
+                </p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-12">
+<!-- Main CTA Terminal Card -->
+<div class="md:col-span-8 glass-panel border-0 relative group p-8 flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+<div class="font-mono text-xs text-primary-dim mb-8 flex justify-between">
+<span>&gt; INITIALIZING_WORKOUT_ENVIRONMENT...</span>
+<span class="text-outline">CPU: 12.4%</span>
+</div>
+<div class="space-y-6 mb-12">
+<h2 class="text-3xl font-headline font-bold text-white uppercase leading-tight">
+                            실전 코딩 테스트에 <br/>도전하십시오.
+                        </h2>
+<p class="text-on-surface-variant font-body">
+                            최신 알고리즘, 데이터 구조, 그리고 아키텍처 설계를 위한 1,000개 이상의 정교한 문제들이 대기 중입니다. 프로그래머스의 실전 데이터를 활용해 당신의 랭킹을 확인하세요.
+                        </p>
+</div>
+<a class="inline-flex items-center justify-center bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-mono font-bold py-6 px-12 group-hover:skew-x-[-10deg] transition-all duration-300 w-fit" href="https://school.programmers.co.kr/learn/challenges?order=recent">
+                        연습 시작하기 (START_EXECUTION)
+                        <span class="material-symbols-outlined ml-3">arrow_forward</span>
+</a>
+<!-- Decorative Image Snippet -->
+<div class="absolute -right-12 -bottom-12 w-64 h-64 opacity-20 grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-110">
+<img class="w-full h-full object-cover" data-alt="Close-up of computer screen with colorful lines of code in a dark environment with cyber neon aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLAoZTpQChLMs3XajMAUVc0nMGKL7z_3uJIHS4vFRf0fKyeO6GkqJAPFfoUp2Pf2boBIWmE4yp5Ssqv0Pi3LScZLH-UTXiyrL_iEWbfZgMENztKAk_ZelsfkmRqos-ZT6Acd7DmNpiCripbJulUPxuvCJ_jKNnihDyhIvuwh-7ZQni1j1ZY2a0zdNQlirmVkFeGaZuACOlPDnXStF2DVf0a78lgoxeYtcJ9O23GBd9onthxS2Frj2xZPgczqY7WqnGe1qWPJ8c4d4"/>
+</div>
+</div>
+<!-- Status Card -->
+<div class="md:col-span-4 bg-surface-container-low p-6 flex flex-col justify-between border-l border-outline-variant/10">
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="text-[10px] font-mono text-tertiary-dim uppercase tracking-widest">// USER_METRICS</span>
+<span class="material-symbols-outlined text-tertiary">analytics</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-outline text-xs font-mono uppercase">SOLVED_TOTAL</span>
+<span class="text-2xl font-headline font-bold text-white">42/150</span>
+</div>
+<div class="w-full h-1 bg-surface-container-highest">
+<div class="w-[28%] h-full bg-tertiary shadow-[0_0_10px_rgba(190,238,0,0.5)]"></div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<div class="p-4 bg-surface-container-highest font-mono text-[11px] text-on-surface-variant leading-relaxed">
+<span class="text-secondary-dim">&gt; system_log:</span> 당신의 현재 논리 구현 속도는 상위 15%에 해당합니다. 복잡도 최적화가 필요합니다.
+                        </div>
+</div>
+</div>
+<!-- Coding History Feature -->
+<div class="md:col-span-4 glass-panel p-6 border-0 group cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-primary mb-4" data-weight="fill">history</span>
+<h3 class="text-lg font-headline font-bold text-white mb-2 uppercase">최근 로그</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-body">이전에 해결한 문제들의 소스 코드를 다시 검토하고 최적화 경로를 탐색합니다.</p>
+<div class="font-mono text-[10px] text-outline uppercase flex items-center gap-2">
+                        ACCESS_HISTORY <span class="text-primary">_</span>
+</div>
+</div>
+<!-- Leaderboard/Community -->
+<div class="md:col-span-8 bg-surface-container-low p-6 flex flex-col md:flex-row gap-8">
+<div class="flex-grow">
+<h3 class="text-lg font-headline font-bold text-white mb-4 uppercase">실시간 글로벌 랭킹</h3>
+<div class="space-y-2">
+<div class="flex justify-between items-center p-3 bg-surface-container-highest/50">
+<div class="flex items-center gap-4">
+<span class="text-xs font-mono text-secondary">01</span>
+<span class="text-sm font-body font-medium">NEO_ARCHITECT</span>
+</div>
+<span class="text-xs font-mono text-primary">12,450 XP</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface-container-highest/50">
+<div class="flex items-center gap-4">
+<span class="text-xs font-mono text-outline">02</span>
+<span class="text-sm font-body font-medium">VOID_DEBUGGER</span>
+</div>
+<span class="text-xs font-mono text-primary">11,820 XP</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface-container-highest/50">
+<div class="flex items-center gap-4">
+<span class="text-xs font-mono text-outline">03</span>
+<span class="text-sm font-body font-medium">CYPHER_PUNK</span>
+</div>
+<span class="text-xs font-mono text-primary">10,940 XP</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/3 flex flex-col justify-end">
+<div class="text-[10px] text-on-surface-variant uppercase font-mono tracking-tighter mb-4">
+                            COMMUNITY_INSIGHT:
+                        </div>
+<p class="text-xs text-outline leading-loose italic">
+                            "알고리즘은 언어에 구애받지 않는 순수한 논리의 예술입니다."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Focus Section: Featured Topic -->
+<section class="mt-20">
+<div class="flex items-end justify-between mb-8 border-b border-outline-variant/10 pb-4">
+<div>
+<h2 class="text-2xl font-headline font-black text-white tracking-widest uppercase">FEATURED_PROTOCOL</h2>
+<p class="text-xs font-mono text-tertiary-dim mt-1">WEEKLY_FOCUS: DYNAMIC_PROGRAMMING</p>
+</div>
+<span class="text-xs font-mono text-outline uppercase tracking-widest">v2.0.44</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="bg-surface-container-high p-8 group hover:bg-primary/5 transition-colors">
+<div class="text-4xl font-headline font-black text-outline/20 mb-4 group-hover:text-primary/30">01</div>
+<h4 class="text-lg font-headline font-bold text-white mb-3">그리디 알고리즘</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">매 순간 최적의 선택을 통해 결론을 도출하는 기법을 연습합니다.</p>
+</div>
+<div class="bg-surface-container-high p-8 group hover:bg-secondary/5 transition-colors">
+<div class="text-4xl font-headline font-black text-outline/20 mb-4 group-hover:text-secondary/30">02</div>
+<h4 class="text-lg font-headline font-bold text-white mb-3">완전 탐색</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">모든 가능성을 시스템적으로 조사하여 최선의 해를 찾는 정교함을 기릅니다.</p>
+</div>
+<div class="bg-surface-container-high p-8 group hover:bg-tertiary/5 transition-colors">
+<div class="text-4xl font-headline font-black text-outline/20 mb-4 group-hover:text-tertiary/30">03</div>
+<h4 class="text-lg font-headline font-bold text-white mb-3">그래프 탐색</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">복잡하게 연결된 노드 사이의 최단 경로와 구조적 관계를 분석합니다.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] text-[#32CD32] font-['JetBrains_Mono'] text-[10px] tracking-widest w-full py-2 px-6 fixed bottom-0 border-t border-[#48474d]/10 flex justify-between items-center z-50">
+<div class="font-bold">© 2024 QUANTUM_DEV_PROTOCOL | SYSTEM_STATUS: ONLINE</div>
+<div class="flex gap-6 uppercase">
+<a class="hover:text-[#32CD32] transition-opacity hover:opacity-80" href="#">uptime_report</a>
+<a class="hover:text-[#32CD32] transition-opacity hover:opacity-80" href="#">git_hub</a>
+<a class="hover:text-[#32CD32] transition-opacity hover:opacity-80" href="#">changelog</a>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-10 left-1/2 -translate-x-1/2 w-[90%] glass-panel rounded-full p-2 flex justify-around items-center z-50 border border-outline-variant/20 shadow-2xl">
+<a class="p-3 text-on-surface-variant" href="/">
+<span class="material-symbols-outlined">home</span>
+</a>
+<div class="p-3 text-primary bg-surface-variant rounded-full">
+<span class="material-symbols-outlined" data-weight="fill">code</span>
+</div>
+<div class="p-3 text-on-surface-variant">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div class="p-3 text-on-surface-variant">
+<span class="material-symbols-outlined">person</span>
+</div>
+</nav>
+<<<<<<< HEAD
+</body></html>
+=======
+</body></html>
+>>>>>>> 604c53a (update glossary)

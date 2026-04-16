@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="dark" lang="ko">
+<head>
+<title>코딩용어 모음집 | QUANTUM_DEV</title>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { background-color: #0e0e13; color: #f9f5fd; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+.headline-font { font-family: 'Space Grotesk', sans-serif; }
+.grid-overlay {
+  background-image: linear-gradient(to right, #48474d 1px, transparent 1px), linear-gradient(to bottom, #48474d 1px, transparent 1px);
+  background-size: 40px 40px; opacity: 0.05;
+}
+.glitch-sm:hover { text-shadow: 2px 0 #ff51fa, -2px 0 #00f4fe; }
+</style>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-variant": "#25252d", "primary-container": "#00f4fe", "on-tertiary-container": "#4a5e00",
+        "secondary": "#ff51fa", "background": "#0e0e13", "on-secondary": "#400040", "inverse-surface": "#fcf8ff",
+        "surface-container": "#19191f", "on-tertiary-fixed-variant": "#526900", "on-primary-fixed": "#004346",
+        "tertiary-fixed-dim": "#beee00", "tertiary-fixed": "#cafd00", "inverse-on-surface": "#55545b",
+        "surface-container-lowest": "#000000", "secondary-container": "#a900a9", "error-container": "#9f0519",
+        "surface-container-low": "#131319", "tertiary-container": "#cafd00", "secondary-fixed": "#ffbdf3",
+        "inverse-primary": "#006a6e", "on-primary": "#006165", "on-primary-container": "#00575b",
+        "on-error-container": "#ffa8a3", "surface-bright": "#2c2b33", "on-primary-fixed-variant": "#006266",
+        "on-tertiary": "#516700", "error-dim": "#d7383b", "on-error": "#490006", "primary-fixed": "#00f4fe",
+        "on-secondary-fixed": "#620061", "on-background": "#f9f5fd", "on-surface-variant": "#acaab1",
+        "on-tertiary-fixed": "#3a4a00", "on-surface": "#f9f5fd", "primary-dim": "#00e5ee",
+        "on-secondary-container": "#fff5f9", "primary": "#a1faff", "outline": "#76747b",
+        "secondary-fixed-dim": "#ffa6f3", "tertiary": "#f3ffca", "surface-tint": "#a1faff",
+        "surface-container-high": "#1f1f26", "outline-variant": "#48474d", "primary-fixed-dim": "#00e5ee",
+        "surface-dim": "#0e0e13", "tertiary-dim": "#beee00", "on-secondary-fixed-variant": "#920091",
+        "secondary-dim": "#ff51fa", "surface": "#0e0e13", "error": "#ff716c", "surface-container-highest": "#25252d"
+      },
+      borderRadius: {"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"},
+      fontFamily: {"headline":["Space Grotesk"],"body":["Plus Jakarta Sans"],"label":["Space Grotesk"]}
+    }
+  }
+}
+</script>
+
+</head>
+<body class="bg-surface selection:bg-primary/30 selection:text-primary">
+<div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e13]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(0,245,255,0.08)]">
+  <div class="flex justify-between items-center px-6 md:px-10 py-5 max-w-full">
+    <a class="text-2xl font-black tracking-tighter text-[#00F5FF] font-headline hover:opacity-80 transition-opacity" href="/">QUANTUM_DEV</a>
+    <div class="hidden md:flex items-center gap-8 lg:gap-10 text-sm lg:text-base">
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/">홈</a>
+      <a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/glossary">코딩용어 모음집</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/practice">코딩 연습</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/lecture">코딩 강의</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/history">코딩 역사</a>
+    </div>
+    <div class="flex items-center gap-4 md:gap-6">
+      <a href="/glossary" class="hidden sm:inline-flex bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-4 py-2 font-headline font-bold text-xs md:text-sm hover:glitch-sm transition-all">용어집 보기</a>
+    </div>
+  </div>
+  <div class="bg-gradient-to-r from-transparent via-[#48474d]/20 to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+
+<main class="pt-32 pb-20 px-6 md:px-10 max-w-7xl mx-auto">
+  <section class="mb-14">
+    <div class="inline-flex items-center gap-2 px-4 py-1 border border-primary/30 text-primary text-xs font-headline tracking-[0.25em] uppercase">Glossary System</div>
+    <h1 class="mt-6 text-5xl md:text-7xl font-black headline-font tracking-tight">코딩용어 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">모음집</span></h1>
+    <p class="mt-6 max-w-3xl text-lg text-on-surface-variant leading-8">현재 사이트 디자인 톤을 유지하면서 만든 프로그래밍 용어 사전입니다. 검색창에서 찾고 싶은 개념을 입력하고, 카드나 상세 페이지에서 예제와 설명을 바로 확인할 수 있습니다.</p>
+  </section>
+
+  <section class="grid lg:grid-cols-[1.4fr_0.8fr] gap-6 mb-10">
+    <div class="bg-surface-container-low border border-outline-variant/30 p-4">
+      <label class="block text-xs uppercase tracking-[0.3em] text-on-surface-variant mb-3">Search Dictionary</label>
+      <div class="flex items-center gap-3 bg-surface-container-high border border-outline-variant/20 px-4 py-4">
+        <span class="material-symbols-outlined text-primary-container">terminal</span>
+        <input id="searchInput" class="w-full bg-transparent border-none focus:ring-0 text-on-surface placeholder:text-on-surface-variant/50" type="text" placeholder="예: 변수, 함수, API, Docker, React, Git..." />
+      </div>
+    </div>
+    <div class="bg-surface-container-low border border-outline-variant/30 p-6">
+      <p class="text-xs uppercase tracking-[0.3em] text-on-surface-variant">Library Status</p>
+      <div class="mt-4 grid grid-cols-2 gap-4">
+        <div class="bg-surface-container-high p-4 border-l-2 border-primary">
+          <div id="termCount" class="text-3xl font-black headline-font">100</div>
+          <p class="text-sm text-on-surface-variant mt-1">등록 용어 수</p>
+        </div>
+        <div class="bg-surface-container-high p-4 border-l-2 border-secondary">
+          <div id="resultCount" class="text-3xl font-black headline-font">100</div>
+          <p class="text-sm text-on-surface-variant mt-1">현재 검색 결과</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <div id="categoryFilters" class="flex flex-wrap gap-2"></div>
+  </section>
+
+  <section id="glossaryGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></section>
+</main>
+
+<script>
+let glossaryData = [];
+let activeCategory = 'ALL';
+
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;'}[m]));
+}
+
+function renderCategories(data) {
+  const categories = ['ALL', ...new Set(data.map(item => item.category))];
+  const container = document.getElementById('categoryFilters');
+  container.innerHTML = categories.map(category => `
+    <button data-category="${category}" class="category-btn px-4 py-2 border text-sm transition-all ${category === activeCategory ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface-variant hover:text-primary hover:border-primary/40'}">
+      ${category}
+    </button>
+  `).join('');
+  container.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.dataset.category;
+      renderCategories(glossaryData);
+      renderCards();
+    });
+  });
+}
+
+function getFilteredData() {
+  const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+  return glossaryData.filter(item => {
+    const inCategory = activeCategory === 'ALL' || item.category === activeCategory;
+    const haystack = [item.termKo, item.termEn, item.category, item.shortDescription, item.description].join(' ').toLowerCase();
+    const inKeyword = !keyword || haystack.includes(keyword);
+    return inCategory && inKeyword;
+  });
+}
+
+function renderCards() {
+  const data = getFilteredData();
+  document.getElementById('resultCount').textContent = data.length;
+  const grid = document.getElementById('glossaryGrid');
+  if (!data.length) {
+    grid.innerHTML = `
+      <div class="md:col-span-2 xl:col-span-3 bg-surface-container-low border border-outline-variant/30 p-10 text-center">
+        <p class="text-2xl font-bold headline-font">검색 결과가 없습니다.</p>
+        <p class="mt-3 text-on-surface-variant">다른 키워드나 카테고리로 다시 찾아보세요.</p>
+      </div>
+    `;
+    return;
+  }
+  grid.innerHTML = data.map(item => `
+    <article class="group bg-surface-container-low p-6 border border-outline-variant/20 hover:border-primary/40 transition-all relative overflow-hidden">
+      <div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/5 blur-3xl group-hover:bg-secondary/10 transition-all"></div>
+      <div class="relative">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <span class="inline-flex px-2 py-1 text-[10px] font-mono tracking-[0.2em] text-primary border border-primary/30">${item.category}</span>
+            <h2 class="mt-4 text-2xl font-bold">${item.termKo}</h2>
+            <p class="text-sm text-on-surface-variant">${item.termEn}</p>
+          </div>
+          <span class="material-symbols-outlined text-primary/50">book_2</span>
+        </div>
+        <p class="mt-5 text-on-surface-variant leading-7 min-h-[84px]">${item.shortDescription}</p>
+        <div class="mt-6 bg-surface-container-high p-4 border-l-2 border-primary font-mono text-xs text-on-surface/80 overflow-auto">
+          <pre><code>${escapeHtml(item.example)}</code></pre>
+        </div>
+        <a href="/glossary/${item.slug}" class="mt-6 inline-flex items-center gap-2 text-primary font-headline tracking-[0.2em] text-xs uppercase">상세 설명 보기 <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+      </div>
+    </article>
+  `).join('');
+}
+
+fetch('/glossary-data.json')
+  .then(res => res.json())
+  .then(data => {
+    glossaryData = data;
+    document.getElementById('termCount').textContent = data.length;
+    document.getElementById('resultCount').textContent = data.length;
+    renderCategories(glossaryData);
+    renderCards();
+  });
+
+document.getElementById('searchInput').addEventListener('input', renderCards);
+</script>
+</body>
+</html>

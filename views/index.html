@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glitch-sm:hover {
+            text-shadow: 2px 0 #ff51fa, -2px 0 #00f4fe;
+        }
+        body {
+            background-color: #0e0e13;
+            color: #f9f5fd;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .headline-font { font-family: 'Space Grotesk', sans-serif; }
+        .grid-overlay {
+            background-image: linear-gradient(to right, #48474d 1px, transparent 1px),
+                              linear-gradient(to bottom, #48474d 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.05;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#25252d",
+                      "primary-container": "#00f4fe",
+                      "on-tertiary-container": "#4a5e00",
+                      "secondary": "#ff51fa",
+                      "background": "#0e0e13",
+                      "on-secondary": "#400040",
+                      "inverse-surface": "#fcf8ff",
+                      "surface-container": "#19191f",
+                      "on-tertiary-fixed-variant": "#526900",
+                      "on-primary-fixed": "#004346",
+                      "tertiary-fixed-dim": "#beee00",
+                      "tertiary-fixed": "#cafd00",
+                      "inverse-on-surface": "#55545b",
+                      "surface-container-lowest": "#000000",
+                      "secondary-container": "#a900a9",
+                      "error-container": "#9f0519",
+                      "surface-container-low": "#131319",
+                      "tertiary-container": "#cafd00",
+                      "secondary-fixed": "#ffbdf3",
+                      "inverse-primary": "#006a6e",
+                      "on-primary": "#006165",
+                      "on-primary-container": "#00575b",
+                      "on-error-container": "#ffa8a3",
+                      "surface-bright": "#2c2b33",
+                      "on-primary-fixed-variant": "#006266",
+                      "on-tertiary": "#516700",
+                      "error-dim": "#d7383b",
+                      "on-error": "#490006",
+                      "primary-fixed": "#00f4fe",
+                      "on-secondary-fixed": "#620061",
+                      "on-background": "#f9f5fd",
+                      "on-surface-variant": "#acaab1",
+                      "on-tertiary-fixed": "#3a4a00",
+                      "on-surface": "#f9f5fd",
+                      "primary-dim": "#00e5ee",
+                      "on-secondary-container": "#fff5f9",
+                      "primary": "#a1faff",
+                      "outline": "#76747b",
+                      "secondary-fixed-dim": "#ffa6f3",
+                      "tertiary": "#f3ffca",
+                      "surface-tint": "#a1faff",
+                      "surface-container-high": "#1f1f26",
+                      "outline-variant": "#48474d",
+                      "primary-fixed-dim": "#00e5ee",
+                      "surface-dim": "#0e0e13",
+                      "tertiary-dim": "#beee00",
+                      "on-secondary-fixed-variant": "#920091",
+                      "secondary-dim": "#ff51fa",
+                      "surface": "#0e0e13",
+                      "error": "#ff716c",
+                      "surface-container-highest": "#25252d"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0px",
+                      "lg": "0px",
+                      "xl": "0px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Plus Jakarta Sans"],
+                      "label": ["Space Grotesk"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/30 selection:text-primary">
+<div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e13]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(0,245,255,0.08)]">
+<div class="flex justify-between items-center px-10 py-5 max-w-full">
+<a class="text-2xl font-black tracking-tighter text-[#00F5FF] font-headline hover:opacity-80 transition-opacity" href="/">QUANTUM_DEV</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all active:scale-95 duration-100" href="/">홈</a>
+<a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1 font-headline tracking-tighter hover:text-[#a1faff] transition-all active:scale-95 duration-100" href="/glossary">코딩용어 모음집</a>
+<a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all active:scale-95 duration-100" href="/practice">코딩 연습</a>
+<a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all active:scale-95 duration-100" href="/lecture">코딩 강의</a>
+<a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all active:scale-95 duration-100" href="/history">코딩 역사</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-outline-variant hover:text-primary cursor-pointer transition-colors">search</span>
+<a href="/glossary" class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-6 py-2 font-headline font-bold text-sm hover:glitch-sm active:scale-95 transition-all inline-block">
+                    용어집 보기
+                </a>
+</div>
+</div>
+<div class="bg-gradient-to-r from-transparent via-[#48474d]/20 to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-32 pb-20 px-6 md:px-10 max-w-7xl mx-auto">
+<header class="mb-24 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 blur-3xl"></div>
+<h1 class="text-6xl md:text-8xl font-black headline-font tracking-tight text-on-surface mb-6">
+                퀀텀 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">코드 아카이브</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed border-l-4 border-primary pl-6">
+                기술의 본질을 파헤치고 데이터의 흐름을 기록합니다.<br/>
+                미래를 설계하는 개발자의 지식 저장소입니다.
+            </p>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-32">
+<div class="group bg-surface-container-low p-8 border-l border-outline-variant hover:border-primary transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-4xl">terminal</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">코딩 연습</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">실무에 바로 적용 가능한 알고리즘과 아키텍처 패턴을 체계적으로 연습하고 공유합니다.</p>
+<div class="flex items-center gap-2 text-primary font-headline text-sm tracking-widest uppercase group-hover:gap-4 transition-all cursor-pointer" onclick="window.location.href='/practice'">
+                    READ_MORE <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="group bg-surface-container-low p-8 border-l border-outline-variant hover:border-primary transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-4xl">menu_book</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">코딩용어 모음집</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">기초 문법부터 웹, 데이터베이스, Git, DevOps까지 자주 나오는 개발 용어 100개를 한 번에 찾아볼 수 있습니다.</p>
+<div class="flex items-center gap-2 text-primary font-headline text-sm tracking-widest uppercase group-hover:gap-4 transition-all cursor-pointer" onclick="window.location.href='/glossary'">
+                    OPEN_DICTIONARY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="group bg-surface-container-low p-8 border-l border-outline-variant hover:border-secondary transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-secondary text-4xl">layers</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">코딩 강의</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">복잡한 개념을 단순하게 시각화하여 전달하는 하이엔드 개발 커리큘럼을 제공합니다.</p>
+<div class="flex items-center gap-2 text-secondary font-headline text-sm tracking-widest uppercase group-hover:gap-4 transition-all cursor-pointer" onclick="window.location.href='/lecture'">
+                    START_LEARNING <span class="material-symbols-outlined text-sm">play_circle</span>
+</div>
+</div>
+<div class="group bg-surface-container-low p-8 border-l border-outline-variant hover:border-tertiary transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-tertiary text-4xl">history_edu</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 text-on-surface">코딩 역사</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">컴퓨팅의 기원부터 현대 프레임워크의 탄생까지, 기술의 진화 과정을 추적합니다.</p>
+<div class="flex items-center gap-2 text-tertiary font-headline text-sm tracking-widest uppercase group-hover:gap-4 transition-all cursor-pointer" onclick="window.location.href='/history'">
+                    EXPLORE_TIMELINE <span class="material-symbols-outlined text-sm">timeline</span>
+</div>
+</div>
+</section>
+<section class="mb-32 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-block px-4 py-1 bg-surface-container-highest border-l-2 border-primary text-primary font-headline text-xs tracking-widest">
+                    SYSTEM_CORE_LOGS
+                </div>
+<h2 class="text-4xl font-bold headline-font">코딩이란 무엇인가?</h2>
+<div class="bg-surface-container-highest/40 backdrop-blur-md p-10 space-y-6 border-l border-outline-variant relative">
+<div class="absolute top-0 right-0 w-24 h-24 opacity-5 pointer-events-none overflow-hidden">
+<span class="text-[120px] font-black leading-none select-none">01</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface/80">
+                        코딩은 단순히 기계와 대화하는 수단이 아닙니다. 그것은 <span class="text-primary font-bold">복잡한 문제를 정의</span>하고, 가장 효율적인 <span class="text-secondary font-bold">논리적 경로</span>를 설계하는 행위입니다. 
+                    </p>
+<p class="text-lg leading-relaxed text-on-surface/80">
+                        우리는 코드라는 추상적인 도구를 통해 현실의 제약을 뛰어넘는 가상의 시스템을 구축합니다. 퀀텀 개발자들은 단순 구현을 넘어, 시스템의 지속 가능성과 미적 완성도를 추구합니다.
+                    </p>
+<div class="pt-4 flex gap-4">
+<button class="text-on-surface font-headline flex items-center gap-2 hover:text-primary transition-colors cursor-pointer" onclick="window.location.href='/practice'">
+<span class="material-symbols-outlined text-sm">terminal</span> sudo query --all
+                        </button>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/20 blur-[100px] group-hover:bg-primary/30 transition-all"></div>
+<div class="relative bg-surface-container aspect-square overflow-hidden border border-outline-variant p-2">
+<img alt="High-tech server room background" class="w-full h-full object-cover grayscale contrast-125 opacity-70 group-hover:scale-105 transition-transform duration-700" data-alt="Futuristic server room with neon blue lights and digital data streams flowing through glass panels, cinematic dark atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFhq6VfLV3ssKebKOKcygKltIpUiaSn9k5jto3dodZ16CrcLnxqLh7x_MrlN5QthcyK0sGnwQYKHzKUgjSWGQoFEKEcixoysJDt8X_7Uhy1Rs6BQS8ZHMYIOciF_XmspDQIM6eupw5GNlWe2QH0BwfvOCU0l1k7Q1eVnfycemwrjem04RWNsFd5bssWk3ajkc3rsBJM3PEdMCRCaiyKvilSzfG049xlHclfttXOUBrCUOIZG2Vf3gAZUTiQkJ7ppcAm4rKhIFxKfA"/>
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface-container-lowest/80 backdrop-blur-xl border-l-2 border-secondary">
+<p class="font-headline text-xs text-secondary mb-1">CURRENT_STATUS: OPERATIONAL</p>
+<p class="text-sm font-medium">네트워크 가용성 최적화 알고리즘 분석 진행 중 (v4.0.2)</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-32">
+<div class="flex justify-between items-end mb-12">
+<div>
+<p class="text-primary font-headline tracking-[0.3em] text-xs mb-2">LATEST_ARTICLES</p>
+<h2 class="text-4xl font-black headline-font">최신 기술 리포트</h2>
+</div>
+<div class="text-outline hover:text-on-surface cursor-pointer flex items-center gap-2 transition-colors">
+<span class="font-headline text-sm">VIEW_ALL_RECORDS</span>
+<span class="material-symbols-outlined">north_east</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="group flex items-center justify-between p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors border-l-2 border-transparent hover:border-primary cursor-pointer">
+<div class="flex gap-8 items-center">
+<span class="font-headline text-outline group-hover:text-primary transition-colors">01</span>
+<div>
+<h4 class="text-xl font-bold mb-1 group-hover:text-primary transition-colors">Rust를 활용한 고성능 웹 서버 구축기</h4>
+<p class="text-sm text-on-surface-variant">안정성과 속도를 동시에 잡는 현대적인 인프라스트럭처 설계</p>
+</div>
+</div>
+<div class="text-right hidden md:block">
+<p class="font-headline text-xs text-outline mb-1">2024.03.15</p>
+<span class="px-3 py-1 bg-surface-variant text-[10px] font-headline text-secondary uppercase tracking-widest">Architecture</span>
+</div>
+</div>
+<div class="group flex items-center justify-between p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors border-l-2 border-transparent hover:border-secondary cursor-pointer">
+<div class="flex gap-8 items-center">
+<span class="font-headline text-outline group-hover:text-secondary transition-colors">02</span>
+<div>
+<h4 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">WebGPU: 브라우저에서의 3D 혁명</h4>
+<p class="text-sm text-on-surface-variant">WebGL의 한계를 넘어 실시간 렌더링의 새로운 지평을 열다</p>
+</div>
+</div>
+<div class="text-right hidden md:block">
+<p class="font-headline text-xs text-outline mb-1">2024.03.12</p>
+<span class="px-3 py-1 bg-surface-variant text-[10px] font-headline text-primary uppercase tracking-widest">Graphics</span>
+</div>
+</div>
+<div class="group flex items-center justify-between p-6 bg-surface-container-low hover:bg-surface-container-high transition-colors border-l-2 border-transparent hover:border-tertiary cursor-pointer">
+<div class="flex gap-8 items-center">
+<span class="font-headline text-outline group-hover:text-tertiary transition-colors">03</span>
+<div>
+<h4 class="text-xl font-bold mb-1 group-hover:text-tertiary transition-colors">AI 기반 자동화 테스트 시스템 설계</h4>
+<p class="text-sm text-on-surface-variant">LLM을 활용한 테스트 케이스 생성 및 코드 커버리지 최적화</p>
+</div>
+</div>
+<div class="text-right hidden md:block">
+<p class="font-headline text-xs text-outline mb-1">2024.03.08</p>
+<span class="px-3 py-1 bg-surface-variant text-[10px] font-headline text-tertiary uppercase tracking-widest">DevOps</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#0e0e13] border-t border-[#48474d]/20 py-12 px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="text-[10px] font-headline uppercase tracking-[0.3em] text-slate-600">
+                © 2024 <span class="text-primary">QUANTUM_PROTOCOL</span>. ALL_RIGHTS_RESERVED.
+            </div>
+<div class="flex gap-12">
+<a class="text-[10px] font-headline uppercase tracking-widest text-slate-600 hover:text-white transition-opacity" href="#">개인정보처리방침</a>
+<a class="text-[10px] font-headline uppercase tracking-widest text-slate-600 hover:text-white transition-opacity" href="#">이용약관</a>
+<a class="text-[10px] font-headline uppercase tracking-widest text-slate-600 hover:text-white transition-opacity" href="#">고객지원</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors">terminal</span>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors">code</span>
+</div>
+</div>
+</footer>
+</body></html>

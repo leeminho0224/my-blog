@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#920091",
+                    "on-surface": "#f9f5fd",
+                    "tertiary": "#f3ffca",
+                    "on-primary": "#006165",
+                    "surface-container-high": "#1f1f26",
+                    "tertiary-dim": "#beee00",
+                    "on-primary-fixed": "#004346",
+                    "outline": "#76747b",
+                    "on-tertiary-container": "#4a5e00",
+                    "on-error-container": "#ffa8a3",
+                    "surface-variant": "#25252d",
+                    "on-secondary": "#400040",
+                    "secondary-dim": "#ff51fa",
+                    "on-tertiary-fixed": "#3a4a00",
+                    "outline-variant": "#48474d",
+                    "on-secondary-fixed": "#620061",
+                    "primary-dim": "#00e5ee",
+                    "on-tertiary-fixed-variant": "#526900",
+                    "surface-container-highest": "#25252d",
+                    "primary-fixed": "#00f4fe",
+                    "on-surface-variant": "#acaab1",
+                    "primary-container": "#00f4fe",
+                    "secondary-container": "#a900a9",
+                    "on-tertiary": "#516700",
+                    "surface-tint": "#a1faff",
+                    "inverse-on-surface": "#55545b",
+                    "surface-container-lowest": "#000000",
+                    "surface-dim": "#0e0e13",
+                    "secondary": "#ff51fa",
+                    "on-primary-container": "#00575b",
+                    "on-background": "#f9f5fd",
+                    "surface": "#0e0e13",
+                    "tertiary-container": "#cafd00",
+                    "on-secondary-container": "#fff5f9",
+                    "secondary-fixed-dim": "#ffa6f3",
+                    "surface-container": "#19191f",
+                    "inverse-primary": "#006a6e",
+                    "background": "#0e0e13",
+                    "error-container": "#9f0519",
+                    "surface-bright": "#2c2b33",
+                    "secondary-fixed": "#ffbdf3",
+                    "primary-fixed-dim": "#00e5ee",
+                    "on-error": "#490006",
+                    "tertiary-fixed": "#cafd00",
+                    "surface-container-low": "#131319",
+                    "on-primary-fixed-variant": "#006266",
+                    "tertiary-fixed-dim": "#beee00",
+                    "inverse-surface": "#fcf8ff",
+                    "error-dim": "#d7383b",
+                    "primary": "#a1faff",
+                    "error": "#ff716c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Space Grotesk"],
+                    "mono": ["JetBrains Mono"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0e0e13; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .glass { backdrop-filter: blur(12px); background-color: rgba(37, 37, 45, 0.4); }
+        .grid-overlay {
+            background-image: linear-gradient(to right, rgba(72, 71, 77, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(72, 71, 77, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen grid-overlay selection:bg-primary selection:text-surface">
+<!-- Top Navigation Bar -->
+<header class="bg-[#0e0e13]/40 backdrop-blur-xl docked full-width top-0 z-50 fixed w-full">
+<nav class="flex justify-between items-center w-full px-6 py-4">
+<div class="text-xl font-black text-[#00F5FF] drop-shadow-[0_0_8px_rgba(0,245,255,0.4)] font-['Space_Grotesk'] tracking-tighter uppercase">
+                QUANTUM_DEV_LOG
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tighter uppercase">
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/">홈</a>
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/practice">코딩 연습</a>
+<<<<<<< HEAD
+=======
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/glossary">코딩용어 모음집</a>
+>>>>>>> 604c53a (update glossary)
+<a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1 skew-x-[-10deg] transition-transform" href="/lecture">코딩 강의</a>
+<a class="text-[#76747b] hover:text-[#00F5FF] hover:bg-[#25252d]/50 transition-all duration-300" href="/history">코딩 역사</a>
+</div>
+<div class="flex items-center gap-4 text-[#00F5FF]">
+<span class="material-symbols-outlined cursor-pointer" data-icon="terminal">terminal</span>
+</div>
+<<<<<<< HEAD
+=======
+<a href="/glossary" class="fixed right-6 bottom-24 md:bottom-8 z-40 bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-4 py-3 font-headline text-xs tracking-[0.2em] shadow-[0_0_20px_rgba(0,245,255,0.2)]">용어집</a>
+>>>>>>> 604c53a (update glossary)
+</nav>
+</header>
+<!-- Side Navigation Bar (Hidden on Mobile) -->
+<aside class="hidden md:flex flex-col h-full py-8 px-4 fixed left-0 top-0 w-64 bg-[#131319] border-r border-[#48474d]/15 shadow-[10px_0px_30px_-15px_rgba(0,245,255,0.08)] z-40">
+<div class="mt-16 mb-10 px-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="terminal">terminal</span>
+</div>
+<div>
+<div class="text-lg font-bold text-[#a1faff] font-mono leading-tight">ROOT@QUANTUM</div>
+<div class="text-[10px] text-primary/60 font-mono">STATUS: STABLE</div>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-2 font-['JetBrains_Mono'] text-xs uppercase">
+<a class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:bg-[#25252d] transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="folder">folder</span>
+                REPOSITORY
+            </a>
+<a class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:bg-[#25252d] transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="bug_report">bug_report</span>
+                DEBUGGER
+            </a>
+<a class="flex items-center gap-3 py-3 px-4 bg-[#25252d] text-[#00F5FF] border-l-2 border-[#ff51fa] group" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="terminal">terminal</span>
+                TERMINAL
+            </a>
+<a class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:bg-[#25252d] transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="history">history</span>
+                HISTORY
+            </a>
+</nav>
+<div class="mt-auto space-y-4">
+<button class="w-full py-3 bg-primary text-surface font-black text-sm tracking-widest hover:skew-x-[-4deg] transition-transform">
+                EXECUTE_LOG
+            </button>
+<a class="flex items-center gap-3 py-3 px-4 text-[#76747b] hover:bg-[#25252d] transition-colors font-mono text-xs uppercase" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="settings">settings</span>
+                SETTINGS
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-16 px-6 md:px-12">
+<!-- Hero Section / Terminal Prompt -->
+<section class="mb-16">
+<div class="max-w-4xl">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-secondary font-mono text-sm">// SESSION_04: LECTURE_CURATION</span>
+<div class="h-[1px] flex-1 bg-outline-variant/20"></div>
+</div>
+<h1 class="text-5xl md:text-7xl font-black font-headline tracking-tighter uppercase mb-6 leading-none">
+                    코딩 <span class="text-primary italic">강의</span> 프로토콜
+                </h1>
+<p class="text-on-surface-variant text-lg max-w-2xl font-body leading-relaxed mb-8">
+                    퀀텀 개발 연구소에서 엄선한 프로그래밍 강의 시리즈입니다. 기초 구문부터 고급 시스템 아키텍처까지, 코드로 세상을 재구축하는 방법을 학습하세요.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-gradient-to-r from-primary to-primary-container text-surface-container-lowest font-black tracking-widest text-sm hover:translate-y-[-2px] hover:shadow-[0_0_20px_rgba(0,244,254,0.4)] transition-all" href="https://www.youtube.com/watch?v=kVxNBN49qbk&amp;list=PLmAWMAo-opQwHLj_h1SCVwaaDcjrwR2R3" target="_blank">
+                        YOUTUBE_PLAYLIST_접속
+                    </a>
+<button class="px-8 py-4 border border-outline-variant/30 text-secondary font-bold text-sm tracking-widest hover:bg-secondary/5 transition-colors uppercase">
+                        강의_알림_구독_
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Lectures Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<!-- Featured Card (Large) -->
+<div class="md:col-span-2 bg-surface-container-low border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 font-mono text-[10px] text-primary/40 z-10">CORE_MODULE_01</div>
+<div class="h-64 md:h-full min-h-[300px] w-full relative">
+<img alt="Cyber security visualization" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="Abstract visualization of digital data nodes and neural networks with glowing cyan light in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIlRwpO4oAqbI20AHBpDqUSu-z8qi3ze__FD5uRQzAQRvk8IBznQEybkwXXJ_ps6IrHvBZy5u8bJXzHexJwWRXR_8kttKcBb3L1d6QQ3WpYshstNcxbigVCb4eCvWaqnm5JFAaQVTRC4wtqn3fryqTpNy3kS-YILpAx47KHcI_UMRFCUHwyKEqRSE8JiRZcWoZ2soJTx3FLkPA5XiaiKa0no3RkxGJ2zGyAWLbSqjIWBACt86ZjXCBEaxwdmaUcusH0X0pB25b_JM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full">
+<div class="inline-block px-2 py-1 bg-secondary text-surface text-[10px] font-bold mb-4">HOT_LECTURE</div>
+<h3 class="text-3xl font-black font-headline mb-2 uppercase">리액트 마스터 클래스</h3>
+<p class="text-on-surface-variant font-body text-sm mb-6 max-w-md italic">현대적 웹 프레임워크의 구조적 이해와 고성능 UI 구축 기법</p>
+<div class="flex items-center gap-4 text-primary font-mono text-xs">
+<span>DURATION: 24H 15M</span>
+<span>LEVEL: ADVANCED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Card 1 -->
+<div class="bg-surface-container-high p-8 flex flex-col justify-between border-l-4 border-primary/40 group hover:bg-surface-bright transition-colors">
+<div>
+<div class="text-primary-dim font-mono text-[10px] mb-4 uppercase">SYSTEM_LOG: UPDATED</div>
+<h3 class="text-xl font-bold font-headline mb-4 leading-tight uppercase">알고리즘 데이터 구조</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-6">효율적인 코드 작성을 위한 핵심 로직 분석 및 시간 복잡도 최적화.</p>
+</div>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary" data-icon="bug_report">bug_report</span>
+<span class="text-primary font-mono text-[10px]">ENROLL_NOW_</span>
+</div>
+</div>
+<!-- Side Card 2 -->
+<div class="bg-surface-container-highest p-8 border border-outline-variant/10 group">
+<div class="mb-8">
+<div class="w-12 h-12 bg-surface flex items-center justify-center border border-outline-variant/20 mb-4 group-hover:rotate-45 transition-transform">
+<span class="material-symbols-outlined text-primary" data-icon="database" data-weight="fill">database</span>
+</div>
+<h3 class="text-xl font-bold font-headline mb-2 uppercase">백엔드 시스템 설계</h3>
+<p class="text-on-surface-variant text-sm font-body italic">Scalable infrastructure with Node.js and Rust</p>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 bg-[#25252d] border border-surface text-[10px] flex items-center justify-center font-bold">JD</div>
+<div class="w-8 h-8 bg-[#a1faff] border border-surface text-[10px] text-surface flex items-center justify-center font-bold">MK</div>
+<div class="w-8 h-8 bg-[#ff51fa] border border-surface text-[10px] text-surface flex items-center justify-center font-bold">SY</div>
+</div>
+<div class="mt-2 text-[10px] text-on-surface-variant uppercase font-mono">1,402+ Students Active</div>
+</div>
+</div>
+<!-- Mini List Row -->
+<div class="md:col-span-2 glass border border-outline-variant/10 p-6 flex items-center gap-6">
+<div class="hidden sm:block w-32 h-20 bg-surface-container-low overflow-hidden">
+<img alt="Code on screen" class="w-full h-full object-cover grayscale opacity-50" data-alt="Cinematic close-up of a computer screen displaying colorful code lines with shallow depth of field and bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRTMmWkEgsTEZBLAQRAs1ML5cIWI1n6riSxsOn_-cQREY4N-XmoDR___feDAJx5Y5PWVBoyzKDDp6GhN-h2vW0r0w4QitYbIB2GpiRIJtnscuyu2vSmHRNQ6tmE8cmletfJBO_bNixSFJ9PRZOtSEaujSyWjKockJJkzUkw-Wc6YzlcmHcj1cisK6DDIP-WuEx5vILUU-fvmpNoQMAdfaVRLYU7cmoC2yE6hdKrtqzMTx-TiRfE_Lto1antcMke0NQs9Z5U5xeQsI"/>
+</div>
+<div class="flex-1">
+<h4 class="text-sm font-bold font-headline uppercase text-tertiary tracking-widest">실전 파이썬 자동화</h4>
+<p class="text-xs text-on-surface-variant mt-1">업무 효율을 200% 높이는 자동화 스크립트 작성 가이드</p>
+</div>
+<div class="text-right">
+<div class="text-[10px] font-mono text-outline-variant uppercase">Version 2.4</div>
+<button class="text-primary-dim hover:underline font-mono text-xs mt-1">OPEN_LINK</button>
+</div>
+</div>
+</section>
+<!-- Coding History / Timeline Component -->
+<section class="mb-16">
+<h2 class="text-2xl font-black font-headline tracking-tighter uppercase mb-8 flex items-center gap-3">
+<span class="w-2 h-8 bg-secondary"></span>
+                커리큘럼 로드맵
+            </h2>
+<div class="space-y-4">
+<div class="group flex items-center gap-6 p-6 hover:bg-surface-container-highest transition-colors cursor-pointer border-l-2 border-transparent hover:border-primary">
+<div class="font-mono text-xl text-outline-variant group-hover:text-primary transition-colors">01</div>
+<div class="flex-1">
+<h5 class="font-bold text-lg font-headline uppercase leading-none mb-1">Fundamentals of Logic</h5>
+<p class="text-xs text-on-surface-variant font-mono uppercase tracking-widest">Syntax / Variable Scoping / Conditionals</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="group flex items-center gap-6 p-6 hover:bg-surface-container-highest transition-colors cursor-pointer border-l-2 border-transparent hover:border-primary">
+<div class="font-mono text-xl text-outline-variant group-hover:text-primary transition-colors">02</div>
+<div class="flex-1">
+<h5 class="font-bold text-lg font-headline uppercase leading-none mb-1">Architecture &amp; Patterns</h5>
+<p class="text-xs text-on-surface-variant font-mono uppercase tracking-widest">MVC / Clean Code / Design Thinking</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="group flex items-center gap-6 p-6 hover:bg-surface-container-highest transition-colors cursor-pointer border-l-2 border-transparent hover:border-primary">
+<div class="font-mono text-xl text-outline-variant group-hover:text-primary transition-colors">03</div>
+<div class="flex-1">
+<h5 class="font-bold text-lg font-headline uppercase leading-none mb-1">Deployment Protocol</h5>
+<p class="text-xs text-on-surface-variant font-mono uppercase tracking-widest">CI/CD / Docker / Kubernetes Basics</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Newsletter / Input Section -->
+<section class="bg-surface-container-low p-10 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<div class="w-full h-full font-mono text-[8px] overflow-hidden leading-tight">
+                    const protocol = "QUANTUM";<br/>
+                    function execute() {<br/>
+                      return await init_learning();<br/>
+                    }<br/>
+                    // Loop initiated...<br/>
+                    // Accessing database...<br/>
+                    // Loading modules...<br/>
+                    while(true) {<br/>
+                      code.learn();<br/>
+                    }
+                </div>
+</div>
+<div class="relative z-10 max-w-xl">
+<h3 class="text-2xl font-black font-headline mb-4 uppercase">최신 코딩 정보 구독</h3>
+<p class="text-on-surface-variant font-body text-sm mb-8 italic">// 매주 업데이트되는 새로운 강의와 기술 트렌드를 이메일로 받아보세요.</p>
+<div class="flex gap-4">
+<div class="flex-1 relative">
+<input class="w-full bg-transparent border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-primary font-mono placeholder:text-outline-variant/50 px-0 py-3 transition-colors" placeholder="EMAIL@PROTOCOL.COM" type="email"/>
+<div class="text-[9px] text-tertiary-dim font-mono mt-1">// enter_valid_email_address</div>
+</div>
+<button class="bg-primary text-surface px-6 py-3 font-black text-xs tracking-widest uppercase hover:bg-primary-container transition-colors">
+                        SUBMIT
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000000] w-full py-2 px-6 fixed bottom-0 border-t border-[#48474d]/10 flex justify-between items-center z-50">
+<div class="text-[#32CD32] font-['JetBrains_Mono'] text-[10px] tracking-widest font-bold">
+            © 2024 QUANTUM_DEV_PROTOCOL | SYSTEM_STATUS: ONLINE
+        </div>
+<div class="flex items-center gap-6 font-['JetBrains_Mono'] text-[10px] tracking-widest">
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity uppercase" href="#">uptime_report</a>
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity uppercase" href="#">git_hub</a>
+<a class="text-[#48474d] hover:text-[#32CD32] transition-opacity uppercase" href="#">changelog</a>
+</div>
+</footer>
+<!-- Responsive Bottom Nav (Mobile Only) -->
+<nav class="md:hidden fixed bottom-[32px] left-0 w-full bg-surface-container-high/80 backdrop-blur-md flex justify-around items-center py-3 border-t border-outline-variant/10 z-50">
+<a class="flex flex-col items-center gap-1 text-outline" href="/">
+<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
+<span class="text-[8px] uppercase font-mono">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="/lecture">
+<span class="material-symbols-outlined text-xl" data-icon="terminal" data-weight="fill">terminal</span>
+<span class="text-[8px] uppercase font-mono">Lectures</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline" href="/repo">
+<span class="material-symbols-outlined text-xl" data-icon="folder">folder</span>
+<span class="text-[8px] uppercase font-mono">Repo</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline" href="/settings">
+<span class="material-symbols-outlined text-xl" data-icon="settings">settings</span>
+<span class="text-[8px] uppercase font-mono">Set</span>
+</a>
+</nav>
+<<<<<<< HEAD
+</body></html>
+=======
+</body></html>
+>>>>>>> 604c53a (update glossary)

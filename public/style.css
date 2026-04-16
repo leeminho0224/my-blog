@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 메뉴바 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a {
+  color: #c9d1d9;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #21262d;
+  color: #58a6ff;
+}
+
+/* 메인 */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle, #0d1117, #010409);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #58a6ff;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+/* 버튼 */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #238636;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #2ea043;
+}
+
+/* 카드 */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+}
+
+.card {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+  border: 1px solid #30363d;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(88,166,255,0.3);
+}
+
+.card h2 {
+  color: #58a6ff;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #58a6ff;
+  text-decoration: none;
+}

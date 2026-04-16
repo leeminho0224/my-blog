@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="dark" lang="ko">
+<head>
+<title>코딩용어 상세 | QUANTUM_DEV</title>
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { background-color: #0e0e13; color: #f9f5fd; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+.headline-font { font-family: 'Space Grotesk', sans-serif; }
+.grid-overlay {
+  background-image: linear-gradient(to right, #48474d 1px, transparent 1px), linear-gradient(to bottom, #48474d 1px, transparent 1px);
+  background-size: 40px 40px; opacity: 0.05;
+}
+.glitch-sm:hover { text-shadow: 2px 0 #ff51fa, -2px 0 #00f4fe; }
+</style>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-variant": "#25252d", "primary-container": "#00f4fe", "on-tertiary-container": "#4a5e00",
+        "secondary": "#ff51fa", "background": "#0e0e13", "on-secondary": "#400040", "inverse-surface": "#fcf8ff",
+        "surface-container": "#19191f", "on-tertiary-fixed-variant": "#526900", "on-primary-fixed": "#004346",
+        "tertiary-fixed-dim": "#beee00", "tertiary-fixed": "#cafd00", "inverse-on-surface": "#55545b",
+        "surface-container-lowest": "#000000", "secondary-container": "#a900a9", "error-container": "#9f0519",
+        "surface-container-low": "#131319", "tertiary-container": "#cafd00", "secondary-fixed": "#ffbdf3",
+        "inverse-primary": "#006a6e", "on-primary": "#006165", "on-primary-container": "#00575b",
+        "on-error-container": "#ffa8a3", "surface-bright": "#2c2b33", "on-primary-fixed-variant": "#006266",
+        "on-tertiary": "#516700", "error-dim": "#d7383b", "on-error": "#490006", "primary-fixed": "#00f4fe",
+        "on-secondary-fixed": "#620061", "on-background": "#f9f5fd", "on-surface-variant": "#acaab1",
+        "on-tertiary-fixed": "#3a4a00", "on-surface": "#f9f5fd", "primary-dim": "#00e5ee",
+        "on-secondary-container": "#fff5f9", "primary": "#a1faff", "outline": "#76747b",
+        "secondary-fixed-dim": "#ffa6f3", "tertiary": "#f3ffca", "surface-tint": "#a1faff",
+        "surface-container-high": "#1f1f26", "outline-variant": "#48474d", "primary-fixed-dim": "#00e5ee",
+        "surface-dim": "#0e0e13", "tertiary-dim": "#beee00", "on-secondary-fixed-variant": "#920091",
+        "secondary-dim": "#ff51fa", "surface": "#0e0e13", "error": "#ff716c", "surface-container-highest": "#25252d"
+      },
+      borderRadius: {"DEFAULT":"0px","lg":"0px","xl":"0px","full":"9999px"},
+      fontFamily: {"headline":["Space Grotesk"],"body":["Plus Jakarta Sans"],"label":["Space Grotesk"]}
+    }
+  }
+}
+</script>
+
+</head>
+<body class="bg-surface selection:bg-primary/30 selection:text-primary">
+<div class="fixed inset-0 grid-overlay pointer-events-none"></div>
+
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e13]/80 backdrop-blur-xl shadow-[0_0_20px_rgba(0,245,255,0.08)]">
+  <div class="flex justify-between items-center px-6 md:px-10 py-5 max-w-full">
+    <a class="text-2xl font-black tracking-tighter text-[#00F5FF] font-headline hover:opacity-80 transition-opacity" href="/">QUANTUM_DEV</a>
+    <div class="hidden md:flex items-center gap-8 lg:gap-10 text-sm lg:text-base">
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/">홈</a>
+      <a class="text-[#00F5FF] border-b-2 border-[#00F5FF] pb-1 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/glossary">코딩용어 모음집</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/practice">코딩 연습</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/lecture">코딩 강의</a>
+      <a class="text-slate-400 font-headline tracking-tighter hover:text-[#a1faff] transition-all" href="/history">코딩 역사</a>
+    </div>
+    <div class="flex items-center gap-4 md:gap-6">
+      <a href="/glossary" class="hidden sm:inline-flex bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-4 py-2 font-headline font-bold text-xs md:text-sm hover:glitch-sm transition-all">용어집 보기</a>
+    </div>
+  </div>
+  <div class="bg-gradient-to-r from-transparent via-[#48474d]/20 to-transparent h-[1px] w-full absolute bottom-0"></div>
+</nav>
+
+<main class="pt-32 pb-20 px-6 md:px-10 max-w-6xl mx-auto">
+  <a href="/glossary" class="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors">
+    <span class="material-symbols-outlined text-base">arrow_back</span> 용어집으로 돌아가기
+  </a>
+
+  <section id="termContainer" class="mt-8"></section>
+
+  <section class="mt-12">
+    <h2 class="text-2xl md:text-3xl font-black headline-font">비슷한 개념</h2>
+    <div id="relatedGrid" class="mt-6 grid md:grid-cols-3 gap-5"></div>
+  </section>
+</main>
+
+<script>
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;', "'":'&#39;'}[m]));
+}
+
+fetch('/glossary-data.json')
+  .then(res => res.json())
+  .then(data => {
+    const slug = location.pathname.split('/').filter(Boolean).pop();
+    const item = data.find(term => term.slug === slug);
+
+    if (!item) {
+      document.getElementById('termContainer').innerHTML = `
+        <div class="bg-surface-container-low border border-error/30 p-10">
+          <h1 class="text-4xl font-black headline-font">용어를 찾을 수 없습니다.</h1>
+          <p class="mt-4 text-on-surface-variant">주소가 잘못되었거나 아직 등록되지 않은 용어입니다.</p>
+        </div>
+      `;
+      return;
+    }
+
+    document.title = `${item.termKo} | QUANTUM_DEV`;
+    document.getElementById('termContainer').innerHTML = `
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-6">
+        <article class="bg-surface-container-low border border-outline-variant/20 p-8">
+          <span class="inline-flex px-3 py-1 text-[10px] font-mono tracking-[0.3em] text-primary border border-primary/30">${item.category}</span>
+          <h1 class="mt-5 text-5xl md:text-6xl font-black headline-font tracking-tight">${item.termKo}</h1>
+          <p class="mt-3 text-xl text-on-surface-variant">${item.termEn}</p>
+          <p class="mt-8 text-lg leading-8 text-on-surface-variant">${item.shortDescription}</p>
+          <div class="mt-8 bg-surface-container-high border-l-4 border-primary p-6">
+            <p class="text-sm uppercase tracking-[0.3em] text-primary font-headline">설명</p>
+            <p class="mt-4 text-base leading-8 text-on-surface-variant">${item.description}</p>
+          </div>
+        </article>
+
+        <aside class="bg-surface-container-low border border-outline-variant/20 p-8">
+          <p class="text-sm uppercase tracking-[0.3em] text-secondary font-headline">예제 코드</p>
+          <div class="mt-5 bg-surface-container-high p-5 border border-outline-variant/10 overflow-auto">
+            <pre class="text-sm font-mono text-on-surface/85 whitespace-pre-wrap"><code>${escapeHtml(item.example)}</code></pre>
+          </div>
+          <div class="mt-8 grid gap-4">
+            <div class="bg-surface-container-high p-4 border-l-2 border-secondary">
+              <p class="text-xs uppercase tracking-[0.3em] text-on-surface-variant">URL</p>
+              <p class="mt-2 text-sm break-all text-on-surface">/glossary/${item.slug}</p>
+            </div>
+            <div class="bg-surface-container-high p-4 border-l-2 border-primary">
+              <p class="text-xs uppercase tracking-[0.3em] text-on-surface-variant">학습 팁</p>
+              <p class="mt-2 text-sm leading-7 text-on-surface-variant">이 용어는 정의만 보지 말고 예제 코드를 직접 바꿔 보면서 이해하면 훨씬 빨리 익힐 수 있습니다.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    `;
+
+    const related = data.filter(term => item.related.includes(term.slug)).slice(0, 3);
+    const relatedGrid = document.getElementById('relatedGrid');
+    if (!related.length) {
+      relatedGrid.innerHTML = `<div class="bg-surface-container-low border border-outline-variant/20 p-6 text-on-surface-variant">연관 용어가 아직 연결되지 않았습니다.</div>`;
+      return;
+    }
+    relatedGrid.innerHTML = related.map(term => `
+      <a href="/glossary/${term.slug}" class="block bg-surface-container-low border border-outline-variant/20 hover:border-primary/40 transition-all p-6">
+        <span class="text-[10px] font-mono tracking-[0.2em] text-primary border border-primary/30 px-2 py-1">${term.category}</span>
+        <h3 class="mt-4 text-2xl font-bold">${term.termKo}</h3>
+        <p class="text-sm text-on-surface-variant">${term.termEn}</p>
+        <p class="mt-4 text-sm leading-7 text-on-surface-variant">${term.shortDescription}</p>
+      </a>
+    `).join('');
+  });
+</script>
+</body>
+</html>

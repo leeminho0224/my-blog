@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>개발용어 코드 단어집 | GLOSSARY_TERMINAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#0e0e13",
+                        "on-primary-fixed-variant": "#004f53",
+                        "on-primary-container": "#006c71",
+                        "primary-fixed-dim": "#00dce5",
+                        "surface-tint": "#00dce5",
+                        "secondary-fixed": "#ffd7f5",
+                        "tertiary": "#fcf9ff",
+                        "primary-container": "#00f5ff",
+                        "on-surface-variant": "#b9caca",
+                        "on-primary": "#003739",
+                        "surface-dim": "#131318",
+                        "on-surface": "#e4e1e9",
+                        "error": "#ffb4ab",
+                        "surface": "#131318",
+                        "on-tertiary-fixed-variant": "#47464d",
+                        "on-primary-fixed": "#002021",
+                        "on-error": "#690005",
+                        "surface-variant": "#35343a",
+                        "on-tertiary": "#303036",
+                        "on-background": "#e4e1e9",
+                        "on-tertiary-fixed": "#1b1b21",
+                        "surface-bright": "#39383e",
+                        "primary": "#e9feff",
+                        "inverse-on-surface": "#303035",
+                        "secondary": "#ffaaf3",
+                        "background": "#131318",
+                        "secondary-container": "#c600c6",
+                        "primary-fixed": "#63f7ff",
+                        "on-secondary-fixed": "#380038",
+                        "secondary-fixed-dim": "#ffaaf3",
+                        "on-secondary": "#5b005b",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#3a494a",
+                        "on-secondary-container": "#fff0f8",
+                        "surface-container-low": "#1b1b20",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c8c5ce",
+                        "tertiary-fixed": "#e4e1ea",
+                        "inverse-primary": "#00696e",
+                        "surface-container-high": "#2a292f",
+                        "tertiary-container": "#dfdce5",
+                        "surface-container": "#1f1f24",
+                        "outline": "#849495",
+                        "on-secondary-fixed-variant": "#810081",
+                        "on-tertiary-container": "#616068",
+                        "inverse-surface": "#e4e1e9",
+                        "surface-container-highest": "#35343a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .cyber-grid { background-image: radial-gradient(#3a494a 1px, transparent 1px); background-size: 32px 32px; opacity: 0.05; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0e0e13; }
+        ::-webkit-scrollbar-thumb { background: #3a494a; }
+        ::-webkit-scrollbar-thumb:hover { background: #00f5ff; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface selection:bg-primary-container selection:text-on-primary-fixed">
+<div class="fixed inset-0 cyber-grid pointer-events-none"></div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e13] font-['Manrope'] tracking-tight bg-gradient-to-b from-[#131318] to-transparent">
+<div class="flex justify-between items-center px-8 h-16 w-full max-w-[1440px] mx-auto">
+<a class="text-xl font-bold tracking-tighter text-[#00f5ff] hover:opacity-80 transition-opacity" href="/">개발용어 코드 단어집</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-slate-400 font-medium hover:text-[#00f5ff] transition-colors duration-300" href="/">홈</a>
+<a class="text-slate-400 font-medium hover:text-[#00f5ff] transition-colors duration-300" href="/practice">코딩 연습</a>
+<a class="text-slate-400 font-medium hover:text-[#00f5ff] transition-colors duration-300" href="/lecture">코딩 강의</a>
+<a class="text-slate-400 font-medium hover:text-[#00f5ff] transition-colors duration-300" href="/history">코딩 역사</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="relative group">
+<span class="material-symbols-outlined text-slate-400 group-hover:text-[#00f5ff] cursor-pointer transition-all duration-300">search</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 hover:text-[#00f5ff] cursor-pointer">settings</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-[#00f5ff] cursor-pointer">account_circle</span>
+</div>
+</div>
+</header>
+<main class="relative pt-32 pb-20 px-8 max-w-[1440px] mx-auto">
+<!-- Sub-page Header -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-outline-variant/20 pb-8">
+<div>
+<div class="flex items-center gap-3 mb-2">
+<div class="h-1 w-8 bg-primary-container"></div>
+<span class="font-mono text-xs text-primary-container tracking-widest">ARCHIVE_SYSTEM_v1.0</span>
+</div>
+<h1 class="text-5xl font-extrabold font-headline tracking-tighter mb-4">개발용어 코드 단어집</h1>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">디지털 정보화 시대의 핵심 프로그래밍 언어와 기술적 개념을 체계적으로 정리한 마스터 데이터베이스입니다. 효율적인 학습과 참조를 위한 정밀한 정의와 코드 예제를 제공합니다.</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-mono text-[10px] text-secondary">SYSTEM_STATUS: ACTIVE</span>
+<span class="font-mono text-[10px] text-on-surface-variant">TOTAL_TERMS: 512_ENTRIES</span>
+</div>
+</div>
+</section>
+<!-- Search & Filter Area -->
+<section class="mb-12 space-y-6">
+<div class="relative group">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-primary-container/20 to-secondary-container/20 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative flex bg-surface-container-low border border-outline-variant/30 rounded-lg overflow-hidden h-14">
+<div class="flex items-center justify-center px-5 border-r border-outline-variant/20">
+<span class="material-symbols-outlined text-primary-container">terminal</span>
+</div>
+<input class="w-full bg-transparent border-none focus:ring-0 px-6 text-on-surface placeholder:text-on-surface-variant/40 font-body" placeholder="용어 검색 (예: Closure, Docker, 객체지향...)" type="text"/>
+<div class="flex items-center px-4 gap-2">
+<kbd class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-mono text-on-surface-variant">CTRL</kbd>
+<kbd class="px-2 py-1 bg-surface-container-high rounded text-[10px] font-mono text-on-surface-variant">K</kbd>
+</div>
+</div>
+</div>
+<!-- Alphabet Index -->
+<div class="flex flex-wrap items-center gap-1.5 p-2 bg-surface-container-low/50 rounded-lg border border-outline-variant/10">
+<button class="px-3 py-1 bg-primary-container text-on-primary-fixed text-xs font-bold rounded-sm">ALL</button>
+<div class="h-4 w-px bg-outline-variant/30 mx-2"></div>
+<!-- Korean Alphabets -->
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㄱ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㄴ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㄷ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㄹ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅁ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅂ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅅ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅇ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅈ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅊ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅋ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅌ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅍ</button>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">ㅎ</button>
+<div class="h-4 w-px bg-outline-variant/30 mx-2"></div>
+<button class="px-2 py-1 hover:text-primary-container text-xs font-mono text-on-surface-variant transition-colors">A-Z</button>
+</div>
+</section>
+<!-- Glossary Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Term Card 1: Closure -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-40 transition-opacity">
+<span class="material-symbols-outlined text-4xl">function</span>
+</div>
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: JS_CONCEPT</span>
+<h3 class="text-2xl font-bold mt-3">클로저</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Closure</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">함수와 그 함수가 선언된 렉시컬 환경과의 조합입니다. 외부 함수의 생명 주기가 끝나도 내부 함수가 외부 함수의 변수에 접근할 수 있게 합니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-primary-container">
+<pre class="text-on-surface/80"><code><span class="text-secondary">function</span> outer() {
+  <span class="text-primary-container">let</span> count = 0;
+  <span class="text-secondary">return</span> () =&gt; ++count;
+}</code></pre>
+</div>
+</article>
+<!-- Term Card 2: Docker -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: DEVOPS</span>
+<h3 class="text-2xl font-bold mt-3">도커</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Docker</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">애플리케이션을 신속하게 구축, 테스트 및 배포할 수 있는 소프트웨어 플랫폼입니다. 소프트웨어를 컨테이너라는 표준화된 유닛으로 패키징합니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-secondary-container">
+<pre class="text-on-surface/80"><code>$ <span class="text-primary-container">docker</span> build -t app .
+$ <span class="text-primary-container">docker</span> run -p 80:80 app</code></pre>
+</div>
+</article>
+<!-- Term Card 3: React -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: FRAMEWORK</span>
+<h3 class="text-2xl font-bold mt-3">리액트</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">React</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">사용자 인터페이스를 만들기 위한 선언적이고 효율적이며 유연한 JavaScript 라이브러리입니다. 컴포넌트 기반 아키텍처를 따릅니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-primary-container">
+<pre class="text-on-surface/80"><code><span class="text-secondary">const</span> App = () =&gt; {
+  <span class="text-secondary">return</span> <span class="text-primary-container">&lt;div&gt;</span>Hello World<span class="text-primary-container">&lt;/div&gt;</span>;
+}</code></pre>
+</div>
+</article>
+<!-- Term Card 4: REST API -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: NETWORK</span>
+<h3 class="text-2xl font-bold mt-3">REST API</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Representational State Transfer</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">자원을 이름으로 구분하여 해당 자원의 상태를 주고받는 모든 것을 의미합니다. HTTP 프로토콜의 장점을 활용하는 아키텍처 스타일입니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-secondary-container">
+<pre class="text-on-surface/80"><code>GET /api/v1/users
+POST /api/v1/posts
+Content-Type: application/json</code></pre>
+</div>
+</article>
+<!-- Term Card 5: Recursion -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: ALGORITHM</span>
+<h3 class="text-2xl font-bold mt-3">재귀</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Recursion</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">어떤 문제를 해결하기 위해 자신을 다시 호출하여 문제를 더 작은 단위로 쪼개어 해결하는 프로그래밍 기법입니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-primary-container">
+<pre class="text-on-surface/80"><code><span class="text-secondary">function</span> factorial(n) {
+  <span class="text-secondary">if</span> (n === 0) <span class="text-secondary">return</span> 1;
+  <span class="text-secondary">return</span> n * factorial(n - 1);
+}</code></pre>
+</div>
+</article>
+<!-- Term Card 6: Hoisting -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: JS_CONCEPT</span>
+<h3 class="text-2xl font-bold mt-3">호이스팅</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Hoisting</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미합니다. 코드 최상단으로 끌어올려진 것처럼 동작합니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-secondary-container">
+<pre class="text-on-surface/80"><code>console.log(name); <span class="text-on-surface-variant/40">// undefined</span>
+<span class="text-secondary">var</span> name = <span class="text-primary-container">"Terminal"</span>;</code></pre>
+</div>
+</article>
+<!-- Term Card 7: Async/Await -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: JS_CONCEPT</span>
+<h3 class="text-2xl font-bold mt-3">비동기 처리</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Async / Await</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">비동기 코드를 마치 동기 코드처럼 작성할 수 있게 해주는 문법적 설탕(Syntactic sugar)입니다. 가독성을 대폭 향상시킵니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-primary-container">
+<pre class="text-on-surface/80"><code><span class="text-secondary">async</span> <span class="text-secondary">function</span> fetch() {
+  <span class="text-secondary">const</span> data = <span class="text-secondary">await</span> api.get();
+  <span class="text-secondary">return</span> data;
+}</code></pre>
+</div>
+</article>
+<!-- Term Card 8: Microservices -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: ARCHITECTURE</span>
+<h3 class="text-2xl font-bold mt-3">마이크로서비스</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">Microservices (MSA)</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">단일 애플리케이션을 작고 독립적으로 배포 가능한 서비스들의 집합으로 설계하는 방식입니다. 서비스 간 통신은 주로 HTTP/REST를 사용합니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-secondary-container">
+<pre class="text-on-surface/80"><code>AuthService -&gt; Port 8001
+UserService -&gt; Port 8002
+OrderService -&gt; Port 8003</code></pre>
+</div>
+</article>
+<!-- Term Card 9: SQL Injection -->
+<article class="group bg-surface-container-high/40 p-6 border border-outline-variant/10 hover:border-primary-container/30 transition-all duration-300 hover:bg-surface-container-high">
+<div class="mb-4">
+<span class="text-[10px] font-mono text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full">TYPE: SECURITY</span>
+<h3 class="text-2xl font-bold mt-3">SQL 주입</h3>
+<p class="text-xs font-mono text-on-surface-variant/60">SQL Injection</p>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">악의적인 SQL 문을 데이터베이스에 주입하여 데이터를 조작하거나 탈취하는 공격 방식입니다. 입력값 검증이 필수적입니다.</p>
+<div class="bg-surface-container-lowest p-4 rounded-sm font-mono text-xs border-l-2 border-error">
+<pre class="text-on-surface/80"><code>SELECT * FROM users 
+WHERE id = '' <span class="text-secondary">OR '1'='1'</span>;</code></pre>
+</div>
+</article>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-16 flex flex-col items-center gap-6">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant/30 text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-mono text-sm text-on-surface">PAGE <span class="text-primary-container font-bold">01</span> / 12</span>
+<button class="w-10 h-10 flex items-center justify-center border border-outline-variant/30 text-on-surface-variant hover:border-primary-container hover:text-primary-container transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<button class="px-8 py-3 bg-primary-container text-on-primary-fixed font-bold flex items-center gap-3 group">
+<span class="material-symbols-outlined group-hover:rotate-180 transition-transform duration-500">sync</span>
+                더 많은 용어 불러오기 (LOAD_NEXT_50)
+            </button>
+</div>
+</main>
+<!-- SideNavBar (Hidden on Mobile) -->
+<aside class="fixed left-0 top-0 hidden lg:flex flex-col h-full w-64 border-r border-white/5 bg-[#131318] pt-20 transition-all duration-200 ease-in-out font-['JetBrains_Mono'] text-xs">
+<div class="px-6 mb-8">
+<h2 class="text-lg font-black text-[#00f5ff] mb-1">ARCHIVE_v1.0</h2>
+<p class="text-slate-500 text-[10px]">CONNECTED_MODE</p>
+</div>
+<nav class="flex-1">
+<a class="flex items-center gap-4 px-6 py-4 bg-[#00f5ff]/10 text-[#00f5ff] border-r-4 border-[#00f5ff] group" href="#">
+<span class="material-symbols-outlined text-lg">book_2</span>
+<span>Encyclopedia</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-slate-500 hover:bg-white/5 hover:text-slate-200 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg">api</span>
+<span>API Reference</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-slate-500 hover:bg-white/5 hover:text-slate-200 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg">terminal</span>
+<span>Code Patterns</span>
+</a>
+<a class="flex items-center gap-4 px-6 py-4 text-slate-500 hover:bg-white/5 hover:text-slate-200 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg">database</span>
+<span>System Logs</span>
+</a>
+</nav>
+<div class="p-6 border-t border-white/5 flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+<div>
+<p class="text-[10px] font-bold text-on-surface">ADMIN_DEV</p>
+<div class="flex items-center gap-1">
+<div class="w-1 h-1 bg-green-500 rounded-full animate-pulse"></div>
+<p class="text-[8px] text-on-surface-variant">ONLINE</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="border-t border-outline-variant/10 py-12 px-8 bg-surface-container-low/30 mt-20">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="col-span-2">
+<div class="text-xl font-bold tracking-tighter text-primary-container mb-6">GLOSSARY_TERMINAL</div>
+<p class="text-on-surface-variant text-sm max-w-md leading-relaxed">우리는 개발자들이 지식을 공유하고 기술적 성장을 이룰 수 있는 최고의 환경을 제공합니다. 모든 코드는 정밀하게 관리되며 지식은 실시간으로 업데이트됩니다.</p>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 text-on-surface">RESOURCES</h4>
+<ul class="space-y-3 text-xs text-on-surface-variant font-mono">
+<li><a class="hover:text-primary-container" href="#">DOCUMENTATION</a></li>
+<li><a class="hover:text-primary-container" href="#">API_STATUS</a></li>
+<li><a class="hover:text-primary-container" href="#">GITHUB_REPO</a></li>
+<li><a class="hover:text-primary-container" href="#">COMMUNITY</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm mb-6 text-on-surface">LEGAL</h4>
+<ul class="space-y-3 text-xs text-on-surface-variant font-mono">
+<li><a class="hover:text-primary-container" href="#">PRIVACY_POLICY</a></li>
+<li><a class="hover:text-primary-container" href="#">TERMS_OF_USE</a></li>
+<li><a class="hover:text-primary-container" href="#">LICENSE_v2</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] font-mono text-on-surface-variant/40">© 2024 GLOSSARY_TERMINAL. ALL SYSTEMS OPERATIONAL.</p>
+<div class="flex gap-4">
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center hover:text-primary-container cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-sm">share</span>
+</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center hover:text-primary-container cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-sm">mail</span>
+</span>
+</div>
+</div>
+</footer>
+<!-- FAB (Only for Home/Practice/Glossary) -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-primary-container text-on-primary-fixed shadow-2xl flex items-center justify-center group hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-90 transition-transform">add</span>
+</button>
+</body></html>
